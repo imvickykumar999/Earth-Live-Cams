@@ -1,5 +1,11 @@
 # `Earth-Live-Cams`
 
+    python main.py http://212.147.38.3/mjpg/video.mjpg
+
+https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/d66c1612-8405-412a-8c0e-753712894a67
+
+<br>
+
     To upload multiple files on pythonanywhere.com
     >>> unzip /home/vickslivecam/mysite/app.zip
 
