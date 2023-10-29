@@ -1,7 +1,7 @@
 
 # from HostTor import VicksTor
-# import VicksTor
-# VicksTor.run_server('flask')
+import VicksTor
+VicksTor.run_server('flask')
 
 import cv2
 from flask import (
