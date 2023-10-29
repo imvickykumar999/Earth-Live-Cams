@@ -1,5 +1,8 @@
 # `Earth-Live-Cams`
 
+    To upload multiple files on pythonanywhere.com
+    >>> unzip /home/vickslivecam/mysite/app.zip
+    
 ```python
 ip = '80.32.125.254'
 port = '8080'
