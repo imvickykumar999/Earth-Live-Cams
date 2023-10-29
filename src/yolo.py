@@ -31,7 +31,6 @@ outputLayer = [outputLayer[i - 1] for i in net.getUnconnectedOutLayers()]
 
 while True:
     ret, frame = video_capture.read()
-    # frame = cv2.flip(frame, 1)
     if W is None or H is None:
         (H,W) = frame.shape[:2]
 
