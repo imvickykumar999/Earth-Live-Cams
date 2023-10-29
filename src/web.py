@@ -67,7 +67,7 @@ class FrameThread (threading.Thread):
 frame_thread = FrameThread()
 frame_thread.start()
 
-with socketserver.TCPServer(("", PORT), MyHandler) as httpd:
+with socketserver.TCPServer(("0.0.0.0", PORT), MyHandler) as httpd:
     print("Serving at http://127.0.0.1:8080/")
     try:
         httpd.serve_forever()
