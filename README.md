@@ -23,3 +23,9 @@ camera = cv2.VideoCapture(f'http://{ip}:{port}/cgi-bin/faststream.jpg')
 ```
 
 ![image](https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/d499f7b2-03e4-4642-a11b-f7f0d01b0aef)
+
+<br>
+
+> # `Live on Dark Web`
+>
+> ![image](https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/36ffe9b4-8782-42a9-a42d-ef2db67f467f)
