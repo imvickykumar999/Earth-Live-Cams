@@ -1,4 +1,8 @@
-# `Earth-Live-Cams`
+> # 🏃‍♂️ `How to Run`
+>  
+> ![image](https://github.com/imvickykumar999/Tesseract-Image-Search/blob/main/static/loading-cat.gif?raw=true)
+
+<br>
 
     python yolo.py http://212.147.38.3/mjpg/video.mjpg
 
