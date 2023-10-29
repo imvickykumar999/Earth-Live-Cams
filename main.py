@@ -15,7 +15,7 @@ while True:
   ret, frame = cap.read()
   
   cv2.imshow('webcam feed' , frame)
-  if cv2.waitKey(1) and 0xFF == ord('q'):
+  if cv2.waitKey(1) & 0xFF == 27: # use ESC to quit
     break
     
 cap.release()
