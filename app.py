@@ -58,7 +58,6 @@ if __name__=="__main__":
 '''
 >>> python app.py http://80.32.125.254:8080/cgi-bin/faststream.jpg
 >>> python app.py http://212.147.38.3/mjpg/video.mjpg
->>> python app.py http://158.58.130.148/mjpg/video.mjpg
 >>> python app.py http://212.26.235.210/mjpg/video.mjpg
 >>> python app.py http://imvickykumar999:imvickykumar999@192.168.0.101:8080/video
 >>> python app.py 0

@@ -88,7 +88,6 @@ cv2.destroyAllWindows()
 '''
 >>> python yolo.py http://80.32.125.254:8080/cgi-bin/faststream.jpg
 >>> python yolo.py http://212.147.38.3/mjpg/video.mjpg
->>> python yolo.py http://158.58.130.148/mjpg/video.mjpg
 >>> python yolo.py http://212.26.235.210/mjpg/video.mjpg
 >>> python yolo.py http://imvickykumar999:imvickykumar999@192.168.0.101:8080/video
 >>> python yolo.py 0

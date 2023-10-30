@@ -86,7 +86,6 @@ frame_thread.join()
 cap.release()
 
 '''
->>> python web.py http://158.58.130.148/mjpg/video.mjpg
 >>> python web.py http://80.32.125.254:8080/cgi-bin/faststream.jpg
 >>> python web.py http://212.147.38.3/mjpg/video.mjpg
 >>> python web.py http://212.26.235.210/mjpg/video.mjpg
