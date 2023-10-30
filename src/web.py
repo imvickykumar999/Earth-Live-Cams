@@ -16,8 +16,8 @@ if url == '0': url = 0
 cap = cv2.VideoCapture(url)
 
 file = time.strftime("%Y-%m-%d %H-%M-%S", time.gmtime())
-fourcc = cv2.VideoWriter_fourcc(*'XVID') 
-out = cv2.VideoWriter(f'Recorded/{file}_web.avi', fourcc, 20.0, (640, 480)) 
+fourcc = cv2.VideoWriter_fourcc(*'mp4v') 
+out = cv2.VideoWriter(f'Recorded/{file} web.mp4', fourcc, 20.0, (640, 480)) 
 
 pageData = "<!DOCTYPE>" + \
             "<html>" + \
@@ -84,6 +84,7 @@ print('Server is stopped')
 frame_thread.isRunning = False
 frame_thread.join()
 cap.release()
+out.release()
 
 '''
 >>> python web.py http://80.32.125.254:8080/cgi-bin/faststream.jpg

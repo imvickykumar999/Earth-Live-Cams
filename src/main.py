@@ -13,18 +13,19 @@ if url == '0': url = 0
 cap = cv2.VideoCapture(url)
 
 file = time.strftime("%Y-%m-%d %H-%M-%S", time.gmtime())
-fourcc = cv2.VideoWriter_fourcc(*'XVID') 
-out = cv2.VideoWriter(f'Recorded/{file}_main.avi', fourcc, 20.0, (640, 480)) 
+fourcc = cv2.VideoWriter_fourcc(*'mp4v') 
+out = cv2.VideoWriter(f'Recorded/{file} main.mp4', fourcc, 20.0, (640, 480)) 
 
 while True:
   ret, frame = cap.read()
   out.write(frame)  
 
-  cv2.imshow('webcam feed' , frame)
-  if cv2.waitKey(1) & 0xFF == 27: # use ESC to quit
+  cv2.imshow('Main - ESC to Quit' , frame)
+  if cv2.waitKey(1) & 0xFF == 27:
     break
     
 cap.release()
+out.release()
 cv2.destroyAllWindows()
 
 '''

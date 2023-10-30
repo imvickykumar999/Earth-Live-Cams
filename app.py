@@ -21,8 +21,8 @@ if url == '0': url = 0
 cap = cv2.VideoCapture(url)
 
 file = time.strftime("%Y-%m-%d %H-%M-%S", time.gmtime())
-fourcc = cv2.VideoWriter_fourcc(*'XVID') 
-out = cv2.VideoWriter(f'src/Recorded/{file}_app.avi', fourcc, 20.0, (640, 480)) 
+fourcc = cv2.VideoWriter_fourcc(*'mp4v') 
+out = cv2.VideoWriter(f'src/Recorded/{file} app.mp4', fourcc, 20.0, (640, 480)) 
 
 def generate_frames():
     while True:
@@ -54,6 +54,7 @@ if __name__=="__main__":
         host='0.0.0.0',
         debug=False
     )
+    out.release()
 
 '''
 >>> python app.py http://80.32.125.254:8080/cgi-bin/faststream.jpg

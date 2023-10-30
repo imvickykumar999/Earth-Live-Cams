@@ -16,8 +16,8 @@ if url == '0': url = 0
 video_capture = cv2.VideoCapture(url)
 
 file = time.strftime("%Y-%m-%d %H-%M-%S", time.gmtime())
-fourcc = cv2.VideoWriter_fourcc(*'XVID') 
-out = cv2.VideoWriter(f'Recorded/{file}_yolo.avi', fourcc, 20.0, (640, 480)) 
+fourcc = cv2.VideoWriter_fourcc(*'mp4v') 
+out = cv2.VideoWriter(f'Recorded/{file} yolo.mp4', fourcc, 20.0, (640, 480)) 
 
 confidenceThreshold = 0.5
 NMSThreshold = 0.3
@@ -77,13 +77,14 @@ while True:
             cv2.putText(frame, text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
     out.write(frame)
-    cv2.imshow('Output', frame)
+    cv2.imshow('YOLO - ESC to Quit', frame)
 
-    if cv2.waitKey(1) & 0xFF == 27: # use ESC to quit
+    if cv2.waitKey(1) & 0xFF == 27:
         break
 
 video_capture.release()
 cv2.destroyAllWindows()
+out.release()
 
 '''
 >>> python yolo.py http://212.26.235.210/mjpg/video.mjpg
