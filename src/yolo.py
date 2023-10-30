@@ -1,5 +1,8 @@
 
+# https://screenrec.com/share/sca8wgJKrU
+
 import numpy as np
+import time
 import cv2
 import sys
 
@@ -11,6 +14,10 @@ except: url = f'http://{ip}:{port}/cgi-bin/faststream.jpg'
 
 if url == '0': url = 0
 video_capture = cv2.VideoCapture(url)
+
+file = time.strftime("%Y-%m-%d %H-%M-%S", time.gmtime())
+fourcc = cv2.VideoWriter_fourcc(*'XVID') 
+out = cv2.VideoWriter(f'Recorded/{file}_yolo.avi', fourcc, 20.0, (640, 480)) 
 
 confidenceThreshold = 0.5
 NMSThreshold = 0.3
@@ -30,7 +37,8 @@ outputLayer = [outputLayer[i - 1] for i in net.getUnconnectedOutLayers()]
 (W, H) = (None, None)
 
 while True:
-    ret, frame = video_capture.read()
+    ret, frame = video_capture.read()  
+
     if W is None or H is None:
         (H,W) = frame.shape[:2]
 
@@ -68,13 +76,20 @@ while True:
             text = '{}: {:.4f}'.format(labels[classIDs[i]], confidences[i])
             cv2.putText(frame, text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
+    out.write(frame)
     cv2.imshow('Output', frame)
-    if(cv2.waitKey(1) & 0xFF == ord('q')): # q to quit.
+
+    if cv2.waitKey(1) & 0xFF == 27: # use ESC to quit
         break
 
 video_capture.release()
 cv2.destroyAllWindows()
 
 '''
+>>> python yolo.py http://80.32.125.254:8080/cgi-bin/faststream.jpg
 >>> python yolo.py http://212.147.38.3/mjpg/video.mjpg
+>>> python yolo.py http://158.58.130.148/mjpg/video.mjpg
+>>> python yolo.py http://212.26.235.210/mjpg/video.mjpg
+>>> python yolo.py http://imvickykumar999:imvickykumar999@192.168.0.101:8080/video
+>>> python yolo.py 0
 '''

@@ -1,7 +1,7 @@
 
 import http.server
 import socketserver
-from time import sleep
+import time
 import cv2
 import threading 
 import sys
@@ -14,6 +14,10 @@ except: url = f'http://{ip}:{PORT}/cgi-bin/faststream.jpg'
 
 if url == '0': url = 0
 cap = cv2.VideoCapture(url)
+
+file = time.strftime("%Y-%m-%d %H-%M-%S", time.gmtime())
+fourcc = cv2.VideoWriter_fourcc(*'XVID') 
+out = cv2.VideoWriter(f'Recorded/{file}_web.avi', fourcc, 20.0, (640, 480)) 
 
 pageData = "<!DOCTYPE>" + \
             "<html>" + \
@@ -59,8 +63,10 @@ class FrameThread (threading.Thread):
 
         while self.isRunning:
             ret, frame = cap.read()
+            out.write(frame)  
+
             _, jpg = cv2.imencode(".jpg", frame)
-            sleep(0.03)
+            time.sleep(0.03)
 
         print("Quit thread")
 
@@ -79,9 +85,11 @@ frame_thread.isRunning = False
 frame_thread.join()
 cap.release()
 
-
 '''
-python web.py http://212.147.38.3/mjpg/video.mjpg
-
-# OUTPUT: http://127.0.0.1:8080/
+>>> python web.py http://158.58.130.148/mjpg/video.mjpg
+>>> python web.py http://80.32.125.254:8080/cgi-bin/faststream.jpg
+>>> python web.py http://212.147.38.3/mjpg/video.mjpg
+>>> python web.py http://212.26.235.210/mjpg/video.mjpg
+>>> python web.py http://imvickykumar999:imvickykumar999@192.168.0.101:8080/video
+>>> python web.py 0
 '''

@@ -1,34 +1,35 @@
 
-# from HostTor import VicksTor
-import VicksTor
-VicksTor.run_server('flask')
+# # from HostTor import VicksTor
+# import VicksTor
+# VicksTor.run_server('flask')
 
-import cv2
+import cv2, sys, time
 from flask import (
     Flask, 
     render_template, 
     Response
 )
-
 app = Flask(__name__)
-# port = '8080'
-# ip = '192.168.0.101'
 
-# username = 'imvickykumar999'
-# password = 'imvickykumar999'
-
-# camera = cv2.VideoCapture(0) # laptop webcam
-# camera = cv2.VideoCapture(f'http://{ip}:{port}/video') # no authentication
-# camera = cv2.VideoCapture(f'http://{username}:{password}@{ip}:{port}/video')
-
-ip = '80.32.125.254'
 port = '8080'
+ip = '80.32.125.254'
+
+try: url = sys.argv[1]
+except: url = f'http://{ip}:{port}/cgi-bin/faststream.jpg'
+
+if url == '0': url = 0
+cap = cv2.VideoCapture(url)
+
+file = time.strftime("%Y-%m-%d %H-%M-%S", time.gmtime())
+fourcc = cv2.VideoWriter_fourcc(*'XVID') 
+out = cv2.VideoWriter(f'src/Recorded/{file}_app.avi', fourcc, 20.0, (640, 480)) 
 
 def generate_frames():
     while True:
-        camera = cv2.VideoCapture(f'http://{ip}:{port}/cgi-bin/faststream.jpg')
 
-        success, frame = camera.read()
+        success, frame = cap.read()
+        out.write(frame)  
+
         if not success:
             break
         else:
@@ -53,3 +54,12 @@ if __name__=="__main__":
         host='0.0.0.0',
         debug=False
     )
+
+'''
+>>> python app.py http://80.32.125.254:8080/cgi-bin/faststream.jpg
+>>> python app.py http://212.147.38.3/mjpg/video.mjpg
+>>> python app.py http://158.58.130.148/mjpg/video.mjpg
+>>> python app.py http://212.26.235.210/mjpg/video.mjpg
+>>> python app.py http://imvickykumar999:imvickykumar999@192.168.0.101:8080/video
+>>> python app.py 0
+'''
