@@ -33,3 +33,16 @@ camera = cv2.VideoCapture(f'http://{ip}:{port}/cgi-bin/faststream.jpg')
 > # `Live on Dark Web`
 >
 > ![image](https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/36ffe9b4-8782-42a9-a42d-ef2db67f467f)
+
+-----------------
+
+## `More CCTV URL`:
+
+- Moving Landscape: http://46.234.229.169/mjpg/video.mjpg
+- River Bridge: http://80.66.36.54/cgi-bin/faststream.jpg
+- 4 Way Road: http://212.147.38.3/mjpg/video.mjpg
+- Car parking: http://212.26.235.210/mjpg/video.mjpg
+- Lake Boat: http://80.32.125.254:8080/cgi-bin/faststream.jpg
+- Wind Mill: http://185.98.0.114:8888/mjpg/video.mjpg
+- Street Market: http://93.87.72.254:8090/mjpg/video.mjpg
+
