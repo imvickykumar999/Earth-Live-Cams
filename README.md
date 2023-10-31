@@ -5,15 +5,17 @@
 > `>>> cd src`
 > 
 > `>>> python yolo.py http://212.26.235.210/mjpg/video.mjpg`
->
->     Output on YouTube: https://www.youtube.com/watch?v=-SAVpUiqK8s
->
-> https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/c42ee513-844b-42d8-8f47-a5308995416a
 
-<video width="100%" controls>
+<br>
+
+     Output on YouTube: https://www.youtube.com/watch?v=-SAVpUiqK8s
+
+<video muted width="100%" controls>
   <source src="https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/c42ee513-844b-42d8-8f47-a5308995416a" type="video/mp4">
   https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/c42ee513-844b-42d8-8f47-a5308995416a
 </video>
+
+https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/c42ee513-844b-42d8-8f47-a5308995416a
 
 <br>
 
@@ -22,7 +24,7 @@
 
 <br>
 
-<video width="100%" controls>
+<video muted width="100%" controls>
   <source src="https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/879d5bcf-581f-4c4e-b9af-8e287dd22ed0" type="video/mp4">
   https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/879d5bcf-581f-4c4e-b9af-8e287dd22ed0
 </video>
