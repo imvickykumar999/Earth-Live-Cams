@@ -10,12 +10,22 @@
 >
 > https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/c42ee513-844b-42d8-8f47-a5308995416a
 
+<video width="100%" controls>
+  <source src="https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/c42ee513-844b-42d8-8f47-a5308995416a" type="video/mp4">
+  https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/c42ee513-844b-42d8-8f47-a5308995416a
+</video>
+
 <br>
 
     To upload multiple files on pythonanywhere.com
     >>> unzip /home/vickslivecam/mysite/app.zip
 
 <br>
+
+<video width="100%" controls>
+  <source src="https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/879d5bcf-581f-4c4e-b9af-8e287dd22ed0" type="video/mp4">
+  https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/879d5bcf-581f-4c4e-b9af-8e287dd22ed0
+</video>
 
 https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/879d5bcf-581f-4c4e-b9af-8e287dd22ed0
 
