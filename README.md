@@ -47,31 +47,59 @@ camera = cv2.VideoCapture(f'http://{ip}:{port}/cgi-bin/faststream.jpg')
    <tbody>
      <tr>
        <td>Moving Landscape</td>
-       <td>http://46.234.229.169/mjpg/video.mjpg</td>
+       <td>
+           <a href="http://46.234.229.169/mjpg/video.mjpg"> 
+               http://46.234.229.169/mjpg/video.mjpg 
+           </a>
+       </td>
      </tr>
      <tr>
        <td>River Bridge</td>
-       <td>http://80.66.36.54/cgi-bin/faststream.jpg</td>
+       <td>
+           <a href="http://80.66.36.54/cgi-bin/faststream.jpg"> 
+               http://80.66.36.54/cgi-bin/faststream.jpg 
+           </a>
+       </td>
      </tr>
      <tr>
        <td>4 Way Road</td>
-       <td>http://212.147.38.3/mjpg/video.mjpg</td>
+       <td>
+           <a href="http://212.147.38.3/mjpg/video.mjpg"> 
+               http://212.147.38.3/mjpg/video.mjpg 
+           </a>
+       </td>
      </tr>
      <tr>
        <td>Car parking</td>
-       <td>http://212.26.235.210/mjpg/video.mjpg</td>
+       <td>
+           <a href="http://212.26.235.210/mjpg/video.mjpg"> 
+               http://212.26.235.210/mjpg/video.mjpg 
+           </a>
+       </td>
      </tr>
      <tr>
        <td>Lake Boat</td>
-       <td>http://80.32.125.254:8080/cgi-bin/faststream.jpg</td>
+       <td>
+           <a href="http://80.32.125.254:8080/cgi-bin/faststream.jpg"> 
+               http://80.32.125.254:8080/cgi-bin/faststream.jpg 
+           </a>
+       </td>
      </tr>
      <tr>
        <td>Wind Mill</td>
-       <td>http://185.98.0.114:8888/mjpg/video.mjpg</td>
+       <td>
+           <a href="http://185.98.0.114:8888/mjpg/video.mjpg"> 
+               http://185.98.0.114:8888/mjpg/video.mjpg 
+           </a>
+       </td>
      </tr>
      <tr>
        <td>Street Market</td>
-       <td>http://93.87.72.254:8090/mjpg/video.mjpg</td>
+       <td>
+           <a href="http://93.87.72.254:8090/mjpg/video.mjpg"> 
+               http://93.87.72.254:8090/mjpg/video.mjpg 
+           </a>
+       </td>
      </tr>
   </tbody>
 </table>
