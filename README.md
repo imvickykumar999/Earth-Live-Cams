@@ -1,12 +1,11 @@
 > # 🏃‍♂️ `How to Run`
->  
+> `python yolo.py http://212.26.235.210/mjpg/video.mjpg`
+> 
 > ![image](https://github.com/imvickykumar999/Tesseract-Image-Search/blob/main/static/loading-cat.gif?raw=true)
-
-<br>
-
-    python yolo.py http://212.147.38.3/mjpg/video.mjpg
-
-https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/c42ee513-844b-42d8-8f47-a5308995416a
+>
+>     Output on YouTube: https://www.youtube.com/watch?v=-SAVpUiqK8s
+>
+> https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/c42ee513-844b-42d8-8f47-a5308995416a
 
 <br>
 
@@ -34,7 +33,7 @@ camera = cv2.VideoCapture(f'http://{ip}:{port}/cgi-bin/faststream.jpg')
 >
 > ![image](https://github.com/imvickykumar999/Earth-Live-Cams/assets/50515418/36ffe9b4-8782-42a9-a42d-ef2db67f467f)
 
------------------
+<br>
 
 ## `More CCTV URL`:
 
