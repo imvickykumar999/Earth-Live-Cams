@@ -1,7 +1,10 @@
 > # 🏃‍♂️ `How to Run`
-> `python yolo.py http://212.26.235.210/mjpg/video.mjpg`
 > 
 > ![image](https://github.com/imvickykumar999/Tesseract-Image-Search/blob/main/static/loading-cat.gif?raw=true)
+> 
+> `>>> cd src`
+> 
+> `>>> python yolo.py http://212.26.235.210/mjpg/video.mjpg`
 >
 >     Output on YouTube: https://www.youtube.com/watch?v=-SAVpUiqK8s
 >
