@@ -38,11 +38,42 @@ camera = cv2.VideoCapture(f'http://{ip}:{port}/cgi-bin/faststream.jpg')
 
 ## `More CCTV URL`:
 
-- Moving Landscape: http://46.234.229.169/mjpg/video.mjpg
-- River Bridge: http://80.66.36.54/cgi-bin/faststream.jpg
-- 4 Way Road: http://212.147.38.3/mjpg/video.mjpg
-- Car parking: http://212.26.235.210/mjpg/video.mjpg
-- Lake Boat: http://80.32.125.254:8080/cgi-bin/faststream.jpg
-- Wind Mill: http://185.98.0.114:8888/mjpg/video.mjpg
-- Street Market: http://93.87.72.254:8090/mjpg/video.mjpg
+<table>
+  <thead>
+    <tr>
+      <th>Descriptions</th>
+      <th>WebCam URL</th>
+    </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td>Moving Landscape</td>
+       <td>http://46.234.229.169/mjpg/video.mjpg</td>
+     </tr>
+     <tr>
+       <td>River Bridge</td>
+       <td>http://80.66.36.54/cgi-bin/faststream.jpg</td>
+     </tr>
+     <tr>
+       <td>4 Way Road</td>
+       <td>http://212.147.38.3/mjpg/video.mjpg</td>
+     </tr>
+     <tr>
+       <td>Car parking</td>
+       <td>http://212.26.235.210/mjpg/video.mjpg</td>
+     </tr>
+     <tr>
+       <td>Lake Boat</td>
+       <td>http://80.32.125.254:8080/cgi-bin/faststream.jpg</td>
+     </tr>
+     <tr>
+       <td>Wind Mill</td>
+       <td>http://185.98.0.114:8888/mjpg/video.mjpg</td>
+     </tr>
+     <tr>
+       <td>Street Market</td>
+       <td>http://93.87.72.254:8090/mjpg/video.mjpg</td>
+     </tr>
+  </tbody>
+</table>
 
