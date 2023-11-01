@@ -116,6 +116,38 @@ camera = cv2.VideoCapture(f'http://{ip}:{port}/cgi-bin/faststream.jpg')
            </a>
        </td>
      </tr>
-  </tbody>
+     <tr>
+       <td>Delhi Temple</td>
+       <td>
+           <a href="http://117.206.86.54:8080/mjpg/video.mjpg"> 
+               http://117.206.86.54:8080/mjpg/video.mjpg 
+           </a>
+       </td>
+     </tr>
+     <tr>
+       <td>Toronto Traffic</td>
+       <td>
+           <a href="http://192.82.150.11:8083/mjpg/video.mjpg"> 
+               http://192.82.150.11:8083/mjpg/video.mjpg 
+           </a>
+       </td>
+     </tr>
+     <tr>
+       <td>River Zoom Port</td>
+       <td>
+           <a href="http://184.189.98.38/mjpg/video.mjpg"> 
+               http://184.189.98.38/mjpg/video.mjpg 
+           </a>
+       </td>
+     </tr>
+     <tr>
+       <td>Hotel Hall</td>
+       <td>
+           <a href="http://158.58.130.148/mjpg/video.mjpg"> 
+               http://158.58.130.148/mjpg/video.mjpg 
+           </a>
+       </td>
+     </tr>
+   </tbody>
 </table>
 
