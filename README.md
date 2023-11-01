@@ -69,7 +69,7 @@ camera = cv2.VideoCapture(f'http://{ip}:{port}/cgi-bin/faststream.jpg')
        </td>
      </tr>
      <tr>
-       <td>River Bridge</td>
+       <td>Austria Bridge</td>
        <td>
            <a href="http://80.66.36.54/cgi-bin/faststream.jpg"> 
                http://80.66.36.54/cgi-bin/faststream.jpg 
@@ -145,6 +145,14 @@ camera = cv2.VideoCapture(f'http://{ip}:{port}/cgi-bin/faststream.jpg')
        <td>
            <a href="http://158.58.130.148/mjpg/video.mjpg"> 
                http://158.58.130.148/mjpg/video.mjpg 
+           </a>
+       </td>
+     </tr>
+     <tr>
+       <td>Japan Bridge</td>
+       <td>
+           <a href="http://211.132.61.124/mjpg/video.mjpg"> 
+               http://211.132.61.124/mjpg/video.mjpg 
            </a>
        </td>
      </tr>
