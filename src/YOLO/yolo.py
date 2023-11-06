@@ -17,14 +17,14 @@ video_capture = cv2.VideoCapture(url)
 
 file = time.strftime("%Y-%m-%d %H-%M-%S", time.gmtime())
 fourcc = cv2.VideoWriter_fourcc(*'mp4v') 
-out = cv2.VideoWriter(f'Recorded/{file} yolo.mp4', fourcc, 20.0, (640, 480)) 
+out = cv2.VideoWriter(f'{file} yolo.mp4', fourcc, 20.0, (640, 480)) 
 
 confidenceThreshold = 0.5
 NMSThreshold = 0.3
 
-modelConfiguration = 'YOLO/yolov3.cfg'
-modelWeights = 'YOLO/yolov3.weights'
-labelsPath = 'YOLO/coco.names'
+modelConfiguration = 'yolov3.cfg'
+modelWeights = 'yolov3.weights'
+labelsPath = 'coco.names'
 
 labels = open(labelsPath).read().strip().split('\n')
 np.random.seed(10)
