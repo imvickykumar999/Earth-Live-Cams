@@ -2,10 +2,12 @@
 import cv2, time, sys
 
 port = '8080'
-ip = '80.32.125.254'
+ip = '192.168.0.103'
+username = 'imvickykumar999'
+password = 'imvickykumar999'
 
 try: url = sys.argv[1]
-except: url = f'http://{ip}:{port}/cgi-bin/faststream.jpg'
+except: url = f'http://{username}:{password}@{ip}:{port}/video'
 
 if url == '0': url = 0
 cap = cv2.VideoCapture(url)
@@ -33,3 +35,7 @@ while True:
 cap.release()
 out.release()
 cv2.destroyAllWindows()
+
+'''
+>>> python face_blur.py 0
+'''
