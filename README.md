@@ -133,10 +133,10 @@ camera = cv2.VideoCapture(f'http://{ip}:{port}/cgi-bin/faststream.jpg')
        </td>
      </tr>
      <tr>
-       <td>River Zoom Port</td>
+       <td>Parallel Road</td>
        <td>
-           <a href="http://184.189.98.38/mjpg/video.mjpg"> 
-               http://184.189.98.38/mjpg/video.mjpg 
+           <a href="http://166.143.28.201:8081/-wvhttp-01-/GetOneShot?frame_count=1000000000"> 
+               http://166.143.28.201:8081/-wvhttp-01-/GetOneShot?frame_count=1000000000 
            </a>
        </td>
      </tr>
